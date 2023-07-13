@@ -4,6 +4,7 @@
  *
  * Return 1 always
  */
+int write(int filedes, const char *buf, unsigned int nbyte);
 int main(void)
 {
 	char *s;
