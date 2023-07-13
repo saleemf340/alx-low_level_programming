@@ -1,10 +1,9 @@
-#include <stdio.h>
+#include <unistd.h>
 /**
- * main - starting point
- *
- * Return 1 always
+ * main - Entry point
+ * Description: prints a string
+ * Return: 1 always
  */
-int write(int filedes, const char *buf, unsigned int nbyte);
 int main(void)
 {
 	char *s;
