@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <string.h>
 
-/*
- * for the sake of a description
- * */
-
+/**
+ * main - entry point
+ *
+ * Return: always 0(Success) 
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
