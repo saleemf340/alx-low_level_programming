@@ -1,13 +1,12 @@
 #include <stdio.h>
-#include <sys/syscall.h>
 /**
  * main - starting point
  *
  * Return 1 always
  */
+int write(int filedes, const char *buf, unsigned int nbyte);
 int main(void)
 {
-	const char msg[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-    	syscall(SYS_write, 1, msg, sizeof(msg));
-    	return 0;
+	   write(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 60);
+	   return 1; 
 }
