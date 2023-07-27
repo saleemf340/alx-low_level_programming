@@ -1,22 +1,20 @@
 #include "main.h"
 
 /**
- * reverse_array - reverse array elements
- * @a: array
- * @n: number of elements in array
+ * string_toupper - capitalize all letters in string
+ * @s: string to manipulate
+ * Return: string with all letters capitalized
  */
 
-void reverse_array(int *a, int n)
+char *string_toupper(char *s)
 {
 
-	int tmp, beg = 0;
-	int end = n - 1; /* omit null terminator in length */
+	int i = 0;
 
-	while (beg < end)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		tmp = *(a + beg);
-		*(a + beg) = *(a + end);
-		*(a + end) = tmp;
-		beg++, end--;
+		if (s[i] >= 'a' && s[i] <= 'z')
+			s[i] = s[i] - 'a' + 'A';
 	}
+	return (s);
 }
